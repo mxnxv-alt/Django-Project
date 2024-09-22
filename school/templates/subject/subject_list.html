@@ -1,0 +1,23 @@
+{% extends 'master.html' %}
+
+{% block title %}
+Subject List
+{% endblock %}
+
+{% block content %}
+<h1 align="center">Subject List</h1><hr>
+    <table border="0" cellspacing="4" cellpadding="5" align="center">
+        <tr>
+            <th>Subject</th>
+            <th>Teacher</th>
+            <th>Students</th>
+        </tr>
+        {% for subject in subjects %}
+        <tr>
+            <td>{{ subject.name }} </td>
+            <td>{{ subject.teacher.email }}</td>
+            <td>{{ subject.students.count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

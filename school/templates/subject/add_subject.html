@@ -1,0 +1,14 @@
+{% extends 'master.html' %}
+
+{% block title %}
+Add Subject
+{% endblock %}
+
+{% block content %}
+<h1>Add Subject</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Subject</button>
+    </form>
+{% endblock %}

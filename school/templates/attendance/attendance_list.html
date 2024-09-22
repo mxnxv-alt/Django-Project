@@ -1,0 +1,28 @@
+{% extends 'master.html' %}
+{% block title %}
+Attendance List
+{% endblock %}
+
+{% block content %}
+    <h1 align="center">Attendance List</h1><hr>
+    <table border="0" cellpadding="5" cellspacing="4" align="center">
+            <tr>
+                <th>Student</th>
+                <th>Date</th>
+                <th>Attendance</th>
+            </tr>
+            {% for attendance in attendances %}
+            <tr>
+                <td>{{ attendance.student.email }}</td>
+                <td>{{ attendance.date }}</td>
+                {% if attendance.is_present %}
+                    <td style="background-color: rgb(142, 202, 142);">
+                        Present</td>
+                {% else %}
+                    <td style="background-color: rgb(197, 100, 100);">
+                        Absent</td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+    </table>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'master.html' %}
+{% block title %}
+Mark Attendance
+{% endblock %}
+
+{% block content %}
+<div align="center">
+    <h1>Mark Attendance</h1><hr>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}
