@@ -31,6 +31,9 @@ After logging in, teachers will have access to the teacher dashboard where they 
 After logging in, students can mark their attendance, view their attendance records, and see their subjects and assigned teachers.
 
 ## Technology Stack
-### Python: The core programming language for building the application.
-### Django: The web framework used for developing the backend and frontend, along with its built-in ORM for database management.
-### SQLite: The default database used for development. However, the system is scalable and can be integrated with databases like PostgreSQL or MySQL for larger-scale deployments.
+### Python: 
+The core programming language for building the application.
+### Django: 
+The web framework used for developing the backend and frontend, along with its built-in ORM for database management.
+### SQLite: 
+The default database used for development. However, the system is scalable and can be integrated with databases like PostgreSQL or MySQL for larger-scale deployments.
